@@ -4,7 +4,7 @@ use crate::{
     error::Error,
 };
 
-use item_configurator_server::{
+use eve_item_configurator_server::{
     CharacterGetter,
     CharacterSetter,
     async_trait,
