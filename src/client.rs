@@ -104,8 +104,8 @@ impl Client {
     {
         let query = self.db
             .fluent()
-            .insert()
-            .into(&self.collection)
+            .update()
+            .in_col(&self.collection)
             .document_id(document_id);
         let query = match self.collection_path {
             Some(ref path) => query.parent(path),
